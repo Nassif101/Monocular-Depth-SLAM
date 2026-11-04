@@ -1,0 +1,8 @@
+# Add this compose file only on machines where `docker run --gpus all ... nvidia-smi`
+# works. Do not enable it blindly unless you enjoy Docker error poetry.
+services:
+  ma-robot-sim:
+    gpus: all
+    environment:
+      NVIDIA_VISIBLE_DEVICES: "all"
+      NVIDIA_DRIVER_CAPABILITIES: "all"
