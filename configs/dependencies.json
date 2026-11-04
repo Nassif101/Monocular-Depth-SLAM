@@ -1,0 +1,15 @@
+{
+  "ORB_SLAM3": {
+    "url": "https://github.com/UZ-SLAMLab/ORB_SLAM3.git",
+    "revision": "4452a3c4ab75b1cde34e5505a36ec3f9edcdc4c4"
+  },
+  "Pangolin": {
+    "url": "https://github.com/stevenlovegrove/Pangolin.git",
+    "revision": "dd801d244db3a8e27b7fe8020cd751404aa818fd",
+    "tag": "v0.6"
+  },
+  "Depth-Anything-3": {
+    "url": "https://github.com/ByteDance-Seed/Depth-Anything-3.git",
+    "revision": "3d835ec1a5802d64a8b8b15f817a1ab54809bfe4"
+  }
+}

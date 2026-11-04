@@ -1,0 +1,12 @@
+diff --git a/pyproject.toml b/pyproject.toml
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -19,7 +19,7 @@ dependencies = [
+     "imageio",
+     "numpy<2",
+     "opencv-python",
+-    "xformers",
++    "xformers; sys_platform == 'linux' and platform_machine == 'x86_64'",
+     "open3d",
+     "fastapi",
+     "uvicorn",

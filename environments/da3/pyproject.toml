@@ -1,0 +1,31 @@
+[project]
+name = "monocular-depth-slam-da3-runtime"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "depth-anything-3",
+    "monocular-depth-slam",
+    "addict",
+    "scikit-learn",
+    "torch>=2",
+    "torchvision",
+    "xformers; sys_platform == 'linux' and platform_machine == 'x86_64'",
+]
+
+[tool.uv]
+environments = [
+    "sys_platform == 'darwin' and platform_machine == 'arm64'",
+    "sys_platform == 'linux' and platform_machine == 'x86_64'",
+]
+
+[tool.uv.sources]
+monocular-depth-slam = { path = "../..", editable = true }
+depth-anything-3 = { path = "../../third_party/Depth-Anything-3", editable = true }
+torch = [{ index = "pytorch-cu128", marker = "sys_platform == 'linux'" }]
+torchvision = [{ index = "pytorch-cu128", marker = "sys_platform == 'linux'" }]
+xformers = [{ index = "pytorch-cu128", marker = "sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true

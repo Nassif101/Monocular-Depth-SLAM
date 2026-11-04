@@ -1,0 +1,8 @@
+diff --git a/include/pangolin/log/packetstream_tags.h b/include/pangolin/log/packetstream_tags.h
+--- a/include/pangolin/log/packetstream_tags.h
++++ b/include/pangolin/log/packetstream_tags.h
+@@ -1,3 +1,4 @@
+ #pragma once
++#include <cstdint>
+ 
+ #include <string>

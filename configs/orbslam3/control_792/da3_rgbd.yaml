@@ -1,0 +1,32 @@
+method: DA3 + ORB-SLAM3 RGB-D (792 sensor-matched RGB)
+sensor: rgbd
+dataset_config: configs/datasets/tum_rgbd.example.yaml
+camera_settings: configs/orbslam3/tum_freiburg1_da3_rgbd.yaml
+vocabulary: third_party/ORB_SLAM3/Vocabulary/ORBvoc.txt
+docker_image: monocular-depth-slam:dev
+runner: build/monocular_runner/control_rgbd_tum
+seed: 0
+opencv_threads: 1
+viewer: false
+replay: paced_all_rgb_no_frame_drops
+source_revision: 4452a3c4ab75b1cde34e5505a36ec3f9edcdc4c4
+checkpoint_config: configs/da3/metric_large.yaml
+prediction_directories:
+  - predictions/da3_metric_large/fr1_xyz
+  - predictions/da3_metric_large/fr1_xyz_extra_rgb
+prepared_depth_directory: predictions/da3_metric_large/fr1_xyz_orb_rgbd
+depth_scale: 1.0
+depth_conversion: canonical_times_processed_mean_focal_over_300
+depth_upsampling: bilinear_pixel_centres
+invalid_depth: nonfinite_or_nonpositive_to_zero
+depth_range_clipping: none
+confidence_filtering: none
+groundtruth_calibration: false
+reference_association_tolerance_s: 0.02
+rpe_interval_s: 1.0
+rpe_interval_tolerance_s: 0.02
+scale_diagnostic_window_s: 5.0
+comparison_run: results/orbslam3_mono_fr1_xyz/run_001
+frame_selection: rgb_with_sensor_depth_match
+depth_source: da3
+prepared_depth_protocol: configs/orbslam3/da3_rgbd_baseline.yaml

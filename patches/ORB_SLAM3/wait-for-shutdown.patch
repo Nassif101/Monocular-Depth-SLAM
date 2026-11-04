@@ -1,0 +1,20 @@
+diff --git a/src/System.cc b/src/System.cc
+--- a/src/System.cc
++++ b/src/System.cc
+@@ -526,6 +526,16 @@ void System::Shutdown()
+ 
+     mpLocalMapper->RequestFinish();
+     mpLoopCloser->RequestFinish();
++    // Final-pose export must not race the mapping/loop-closing workers.
++    while(!mpLocalMapper->isFinished() || !mpLoopCloser->isFinished()
++          || mpLoopCloser->isRunningGBA())
++    {
++        usleep(5000);
++    }
++    if(mptLocalMapping->joinable())
++        mptLocalMapping->join();
++    if(mptLoopClosing->joinable())
++        mptLoopClosing->join();
+     /*if(mpViewer)
+     {
+         mpViewer->RequestFinish();

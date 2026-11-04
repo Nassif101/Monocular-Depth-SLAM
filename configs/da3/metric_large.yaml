@@ -1,0 +1,19 @@
+model: depth_anything_3
+model_variant: da3metric-large
+checkpoint: depth-anything/DA3METRIC-LARGE
+checkpoint_revision: 4010e39f3634a45bc60553321fb49fb760bd594e
+source_revision: 3d835ec1a5802d64a8b8b15f817a1ab54809bfe4
+local_directory: .cache/models/DA3METRIC-LARGE/4010e39f3634a45bc60553321fb49fb760bd594e
+files:
+  config.json:
+    size_bytes: 847
+    sha256: a336f3e76fe375aaae17a9aed9130c9f2aa061535d317ec57dcb2f1f02e1dd53
+  model.safetensors:
+    size_bytes: 1336734448
+    sha256: bbea5b0b3ee389849cffa7ddae89de064a90abd2b055fc5aa99aac68db324776
+process_res: 504
+process_res_method: upper_bound_resize
+raw_output_convention: canonical_z_depth
+metre_conversion: raw_depth * mean(fx_processed, fy_processed) / 300.0
+metric_scale_validated: false
+ground_truth_used_for_inference: false

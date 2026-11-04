@@ -8,6 +8,11 @@ This directory preserves the research conclusions and the implementation plan fr
 2. [Experimental evidence ledger](experiments.md)
 3. [Literature and novelty notes](literature.md)
 4. [Codex implementation brief](../../docs/CODEX_HANDOFF.md)
+5. [Real-data DA3/sensor depth comparison](da3_depth_comparison.md)
+6. [Real-data ORB-SLAM3 monocular trajectory baseline](orbslam3_monocular_baseline.md)
+7. [DA3-assisted ORB-SLAM3 RGB-D baseline and common-timestamp comparison](da3_orbslam3_rgbd_baseline.md)
+8. [Sensor-depth control and three repeats per method](sensor_depth_control.md)
+9. [GT-prefix calibration with later-frame scoring and pose-only rescaling](da3_prefix_calibration.md)
 
 ## Key result
 

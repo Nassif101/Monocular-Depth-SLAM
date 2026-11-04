@@ -1,3 +1,4 @@
+# Selected, fully pinned baseline: configs/da3/metric_large.yaml
 model: depth_anything_3
 checkpoint: null  # required before inference
 revision: null    # pin upstream revision

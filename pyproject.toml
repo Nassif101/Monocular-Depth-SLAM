@@ -7,7 +7,7 @@ name = "monocular-depth-slam"
 version = "0.1.0"
 description = "Reproducible ORB-SLAM3 and learned-depth benchmarking"
 requires-python = ">=3.10"
-dependencies = ["numpy>=1.24", "PyYAML>=6.0"]
+dependencies = ["numpy>=1.24", "PyYAML>=6.0", "Pillow>=10"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8", "ruff>=0.6"]
@@ -18,3 +18,9 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

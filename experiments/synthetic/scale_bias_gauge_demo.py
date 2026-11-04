@@ -3,7 +3,7 @@
 
 Uses only the Python standard library. No real image data, DA3, or SLAM.
 """
-from math import exp, log, hypot, isclose
+from math import log, hypot, isclose
 
 
 def project(point, center):

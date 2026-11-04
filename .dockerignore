@@ -1,5 +1,7 @@
 .git
 .venv
+.venv-*
+.cache
 datasets
 predictions
 results

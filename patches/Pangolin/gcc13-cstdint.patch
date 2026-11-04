@@ -1,0 +1,9 @@
+diff --git a/src/image/image_io_jpg.cpp b/src/image/image_io_jpg.cpp
+--- a/src/image/image_io_jpg.cpp
++++ b/src/image/image_io_jpg.cpp
+@@ -1,4 +1,5 @@
+ #include <algorithm>
++#include <cstdint>
+ #include <fstream>
+ 
+ 

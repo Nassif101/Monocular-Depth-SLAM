@@ -1,0 +1,14 @@
+dataset_config: configs/datasets/tum_rgbd.example.yaml
+camera_settings: configs/orbslam3/tum_freiburg1_mono.yaml
+vocabulary: third_party/ORB_SLAM3/Vocabulary/ORBvoc.txt
+docker_image: monocular-depth-slam:dev
+runner: build/monocular_runner/monocular_tum
+seed: 0
+opencv_threads: 1
+viewer: false
+replay: paced_all_rgb_no_frame_drops
+source_revision: 4452a3c4ab75b1cde34e5505a36ec3f9edcdc4c4
+reference_association_tolerance_s: 0.02
+rpe_interval_s: 1.0
+rpe_interval_tolerance_s: 0.02
+scale_diagnostic_window_s: 5.0

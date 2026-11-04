@@ -1,4 +1,5 @@
 mode: monocular
-revision: null  # pin upstream commit
+revision: 4452a3c4ab75b1cde34e5505a36ec3f9edcdc4c4
 vocabulary: third_party/ORB_SLAM3/Vocabulary/ORBvoc.txt
-camera_settings: null  # provide sequence-specific ORB-SLAM3 YAML
+camera_settings: configs/orbslam3/tum_freiburg1_mono.yaml
+# Reproducible RGB-only runner protocol: configs/orbslam3/monocular_baseline.yaml

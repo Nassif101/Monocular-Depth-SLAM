@@ -1,0 +1,14 @@
+dataset_config: configs/datasets/tum_rgbd.example.yaml
+frame_selection: rgb_with_sensor_depth_match
+expected_input_frames: 792
+output_directory: results/sensor_depth_control_fr1_xyz
+schedule_seed: 20261104
+repeats_per_method: 3
+methods:
+  monocular: configs/orbslam3/control_792/monocular.yaml
+  da3_rgbd: configs/orbslam3/control_792/da3_rgbd.yaml
+  sensor_rgbd: configs/orbslam3/control_792/sensor_rgbd.yaml
+primary_comparison: intersection_of_evaluable_rgb_timestamps_across_all_successful_runs
+rpe_gap_convention: submitted_timeline_indices
+sensor_depth_preparation: predictions/sensor_depth/fr1_xyz_orb_rgbd
+calibration_experiment: none

@@ -1,0 +1,17 @@
+dataset_config: configs/datasets/tum_rgbd.example.yaml
+checkpoint_config: configs/da3/metric_large.yaml
+prediction_directory: predictions/da3_metric_large/fr1_xyz
+output_directory: results/depth_comparison_fr1_xyz
+frame_selection: all_rgb_frames_with_sensor_depth_match
+reference_min_depth_m: 0.1
+reference_max_depth_m: 10.0
+comparison_grid: original_rgb_640x480
+prediction_upsampling: bilinear_pixel_centres
+reference_resampling: none
+primary_calibration: fixed_freiburg1_rgb_intrinsics_from_dataset_config
+primary_aggregation: equal_weight_per_frame
+secondary_aggregation: pixel_pooled
+calibration_prefix_fraction: 0.2
+oracle_per_frame: median_groundtruth_over_prediction_on_evaluation_pixels
+depth_bin_edges_m: [0.1, 0.5, 1.0, 1.5, 2.0, 3.0, 4.0, 5.0, 10.0]
+illustration_matched_frame_indices: [0, 395, 791]

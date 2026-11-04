@@ -1,0 +1,974 @@
+{
+  "schema_version": 1,
+  "installed_on": "2026-11-04",
+  "installation_scope": "Codex user skills (~/.codex/skills, or $CODEX_HOME/skills)",
+  "installer": "Codex built-in skill-installer; git sparse checkout",
+  "selected_files_total_bytes": 1706280,
+  "skills": [
+    {
+      "name": "scientific-writing",
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "revision": "a25cf9ec00e2745d03f8704acf6f6919694ccd9a",
+      "path": "skills/scientific-writing",
+      "files": 31,
+      "bytes": 179722,
+      "git_tree_files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 14897,
+          "git_blob_sha": "446993fcd4716ae54ab74bc2a91e3bc5af5235c7"
+        },
+        {
+          "path": "assets/REPORT_FORMATTING_GUIDE.md",
+          "bytes": 2713,
+          "git_blob_sha": "c8e67f3539929acd5c95e9926e9b730090322ef9"
+        },
+        {
+          "path": "assets/authorship_template.json",
+          "bytes": 1239,
+          "git_blob_sha": "5dd0cd83269684612a82af798bc99f922b140c98"
+        },
+        {
+          "path": "assets/claim_evidence_template.csv",
+          "bytes": 218,
+          "git_blob_sha": "1745c057b4487456d07c3f20d00181050d972c39"
+        },
+        {
+          "path": "assets/consistency_manifest_template.json",
+          "bytes": 891,
+          "git_blob_sha": "97d8c9a8c1815269c14f01ef9d3426bc6e1c8209"
+        },
+        {
+          "path": "assets/manuscript_manifest_template.json",
+          "bytes": 1012,
+          "git_blob_sha": "7e68378e36fa8120eca16bfac3d69f1d8007c1d7"
+        },
+        {
+          "path": "assets/manuscript_scaffold.md",
+          "bytes": 1979,
+          "git_blob_sha": "96cdd508ad5caed48bd97a504d3be98287b2250f"
+        },
+        {
+          "path": "assets/reporting_coverage_template.json",
+          "bytes": 189,
+          "git_blob_sha": "7ef65f95f4e09d45d76b6a068c5eff74ca3a98f6"
+        },
+        {
+          "path": "assets/reporting_guidelines.json",
+          "bytes": 16009,
+          "git_blob_sha": "97daa2730c606a9b8060db7f952560d7ee12bfa3"
+        },
+        {
+          "path": "assets/source_manifest_template.json",
+          "bytes": 599,
+          "git_blob_sha": "666c084b4dc530e1260442e24790e35b7e1c14ec"
+        },
+        {
+          "path": "references/authorship_ai_confidentiality.md",
+          "bytes": 4919,
+          "git_blob_sha": "dcddcb4ecde28f93a1a5c23b9fac182d0716bc54"
+        },
+        {
+          "path": "references/citation_styles.md",
+          "bytes": 3945,
+          "git_blob_sha": "7f82a625fa96c5abef58659a64c65070b4807c67"
+        },
+        {
+          "path": "references/cli_reference.md",
+          "bytes": 4101,
+          "git_blob_sha": "05c1d113720af67cad6458e8bddadcdbcc49ebdd"
+        },
+        {
+          "path": "references/evidence_workflow.md",
+          "bytes": 5033,
+          "git_blob_sha": "6a54eb95d87be854d38046851c87f2a08a487390"
+        },
+        {
+          "path": "references/figures_tables.md",
+          "bytes": 3915,
+          "git_blob_sha": "7022338d438e439aa475b4ecacf6ba7314b26aed"
+        },
+        {
+          "path": "references/imrad_structure.md",
+          "bytes": 4512,
+          "git_blob_sha": "c53506c127ee6f5feb9f6a262398dc85243e73bb"
+        },
+        {
+          "path": "references/journal_policies.md",
+          "bytes": 3010,
+          "git_blob_sha": "6750fd916fcddc53077a1de5fbf50ca9015835b2"
+        },
+        {
+          "path": "references/professional_report_formatting.md",
+          "bytes": 3230,
+          "git_blob_sha": "6238874aa69129b4f206d5b552325463a9b33653"
+        },
+        {
+          "path": "references/reporting_guidelines.md",
+          "bytes": 4785,
+          "git_blob_sha": "fe55f07c153bd1e939f612247fc53ff836d34e35"
+        },
+        {
+          "path": "references/research_integrity_open_science.md",
+          "bytes": 4149,
+          "git_blob_sha": "63eb73027c03d25170649a2d10a67c1eef365585"
+        },
+        {
+          "path": "references/source_ledger.md",
+          "bytes": 11473,
+          "git_blob_sha": "f5cf28854c089fb9c7fd2afe30cd29312ee426ea"
+        },
+        {
+          "path": "references/writing_principles.md",
+          "bytes": 3904,
+          "git_blob_sha": "5fcd5012957fe6670e1e31e103c51d8cfbefa048"
+        },
+        {
+          "path": "scripts/_common.py",
+          "bytes": 7977,
+          "git_blob_sha": "fd4a863823f76529f26531142d26a87bfca47ffa"
+        },
+        {
+          "path": "scripts/audit_claims.py",
+          "bytes": 10039,
+          "git_blob_sha": "299f73fe51111471b697f0c7ce1f251e611d5945"
+        },
+        {
+          "path": "scripts/check_consistency.py",
+          "bytes": 14209,
+          "git_blob_sha": "415be5ce6dae79965f00a3c7cada62a9f012e547"
+        },
+        {
+          "path": "scripts/check_references.py",
+          "bytes": 7075,
+          "git_blob_sha": "dbc3830643883f785ddc41a9b7a18bef1f4a7c5a"
+        },
+        {
+          "path": "scripts/lint_manuscript.py",
+          "bytes": 5881,
+          "git_blob_sha": "81472e6e476a31c582a193761a03fb66e9d0fdfe"
+        },
+        {
+          "path": "scripts/scaffold_manuscript.py",
+          "bytes": 4328,
+          "git_blob_sha": "f60dd74b9b4f2c65faf1f4703e193cb7e8f1fe80"
+        },
+        {
+          "path": "scripts/select_reporting_guidelines.py",
+          "bytes": 7580,
+          "git_blob_sha": "7d23b877cef342ba21074fcfaec7dd47c00a7607"
+        },
+        {
+          "path": "scripts/validate_authorship.py",
+          "bytes": 11518,
+          "git_blob_sha": "5b62a08b2433a54544b3a578a12735cc6cc91885"
+        },
+        {
+          "path": "scripts/validate_manifest.py",
+          "bytes": 14393,
+          "git_blob_sha": "8ad84a317a904b6f7b137691ca7d1cb27d1bb30f"
+        }
+      ]
+    },
+    {
+      "name": "scientific-critical-thinking",
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "revision": "a25cf9ec00e2745d03f8704acf6f6919694ccd9a",
+      "path": "skills/scientific-critical-thinking",
+      "files": 9,
+      "bytes": 133159,
+      "git_tree_files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 13146,
+          "git_blob_sha": "2a2fc151b5b13e4e11ece7410f21a14d5b25e30d"
+        },
+        {
+          "path": "references/common_biases.md",
+          "bytes": 12368,
+          "git_blob_sha": "0acba93293aaf6df629cc00212c9e86a184efdb0"
+        },
+        {
+          "path": "references/core_capabilities.md",
+          "bytes": 16975,
+          "git_blob_sha": "ca7fec36594abd20921d2aa2ae15e9363d3d58b1"
+        },
+        {
+          "path": "references/evidence_hierarchy.md",
+          "bytes": 17435,
+          "git_blob_sha": "e4b4946886cee0b1e35b24309e162e0f9ca6f14b"
+        },
+        {
+          "path": "references/experimental_design.md",
+          "bytes": 18227,
+          "git_blob_sha": "4be76ae49eb6339e6a72c8d3ee69338c4ea3e347"
+        },
+        {
+          "path": "references/logical_fallacies.md",
+          "bytes": 18659,
+          "git_blob_sha": "336a0407f4397f8ad9b218fc4156ef3473d19f70"
+        },
+        {
+          "path": "references/review_sources.md",
+          "bytes": 7557,
+          "git_blob_sha": "0241f4aa470f86473cd8be196edeff07a274b261"
+        },
+        {
+          "path": "references/scientific_method.md",
+          "bytes": 7641,
+          "git_blob_sha": "4dee3644c01de3bec9250d19efa58a0a13cbee59"
+        },
+        {
+          "path": "references/statistical_pitfalls.md",
+          "bytes": 21151,
+          "git_blob_sha": "1e78cb2d3c6873e7d8289009cc7c9fb772def542"
+        }
+      ]
+    },
+    {
+      "name": "literature-review",
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "revision": "a25cf9ec00e2745d03f8704acf6f6919694ccd9a",
+      "path": "skills/literature-review",
+      "files": 12,
+      "bytes": 131520,
+      "git_tree_files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 12869,
+          "git_blob_sha": "5178dce6419cee412155e7b9dd523d5b2ef703f5"
+        },
+        {
+          "path": "assets/review_template.md",
+          "bytes": 13769,
+          "git_blob_sha": "d4188470de723bc75d617b8aaf2fb47a0b65dce4"
+        },
+        {
+          "path": "references/citation_styles.md",
+          "bytes": 7627,
+          "git_blob_sha": "a12c1f8a6dc1a93abfe3c7d74b198062176ce3cf"
+        },
+        {
+          "path": "references/core_workflow.md",
+          "bytes": 11876,
+          "git_blob_sha": "6a0bab11cd67d05dd683576f512b2045d85c826b"
+        },
+        {
+          "path": "references/database_strategies.md",
+          "bytes": 10431,
+          "git_blob_sha": "ed342f27145805ad585ba260c75d60678b60ac20"
+        },
+        {
+          "path": "references/example_workflow.md",
+          "bytes": 3078,
+          "git_blob_sha": "521308758c8847254edb1d62ad242e982f00dbe5"
+        },
+        {
+          "path": "references/search_and_citation.md",
+          "bytes": 4685,
+          "git_blob_sha": "ed27ee9d24c9cef3381cc414834dda7d69a4a019"
+        },
+        {
+          "path": "scripts/generate_pdf.py",
+          "bytes": 4990,
+          "git_blob_sha": "dea8d556e808c006c911131ee761b2bd1ae8ecc0"
+        },
+        {
+          "path": "scripts/generate_schematic.py",
+          "bytes": 7782,
+          "git_blob_sha": "10aacec40261d1dfb4c51c406e1d12590ab865bb"
+        },
+        {
+          "path": "scripts/generate_schematic_ai.py",
+          "bytes": 35684,
+          "git_blob_sha": "a7f586678624e23fb70b271188b70fa539d8fc99"
+        },
+        {
+          "path": "scripts/search_databases.py",
+          "bytes": 8769,
+          "git_blob_sha": "d14e3202055844ea47a4d19b8b5ceeb4321dceab"
+        },
+        {
+          "path": "scripts/verify_citations.py",
+          "bytes": 9960,
+          "git_blob_sha": "39fb278f7896e275784f7ea23ba395b1929863e5"
+        }
+      ]
+    },
+    {
+      "name": "citation-management",
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "revision": "a25cf9ec00e2745d03f8704acf6f6919694ccd9a",
+      "path": "skills/citation-management",
+      "files": 22,
+      "bytes": 299964,
+      "git_tree_files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 16630,
+          "git_blob_sha": "b63b589d4d423969a63e032e62c2b74969147c1c"
+        },
+        {
+          "path": "assets/bibtex_template.bib",
+          "bytes": 9305,
+          "git_blob_sha": "4cc74a8ed142e441a53f9957f1feef39e59f4cf1"
+        },
+        {
+          "path": "assets/citation_checklist.md",
+          "bytes": 10434,
+          "git_blob_sha": "d321768a3b4520f9981a6ac9ae90c1d8c570b00e"
+        },
+        {
+          "path": "references/api_contracts.md",
+          "bytes": 6712,
+          "git_blob_sha": "99e5b1bcf3d181a22ebcf57f8b5387847dfab352"
+        },
+        {
+          "path": "references/best_practices.md",
+          "bytes": 2723,
+          "git_blob_sha": "bc4ed3b0f1f3a6f751c4376b5caf0929ea53ca07"
+        },
+        {
+          "path": "references/bibtex_formatting.md",
+          "bytes": 19394,
+          "git_blob_sha": "31d05a016583c59a9b55671c6e09d1698848fa79"
+        },
+        {
+          "path": "references/citation_validation.md",
+          "bytes": 18996,
+          "git_blob_sha": "2474645bf7482c70483467507e77bcfe992c0a15"
+        },
+        {
+          "path": "references/core_workflow.md",
+          "bytes": 20986,
+          "git_blob_sha": "0b8dab6057e63d3c84f5fda84c3d83450d8b1850"
+        },
+        {
+          "path": "references/example_workflows.md",
+          "bytes": 3382,
+          "git_blob_sha": "8685e5bd11c05cdd6649d478429173c05c0823a2"
+        },
+        {
+          "path": "references/google_scholar_search.md",
+          "bytes": 17993,
+          "git_blob_sha": "15149523b3570d0444e35e3d864731385ea5a398"
+        },
+        {
+          "path": "references/metadata_extraction.md",
+          "bytes": 21419,
+          "git_blob_sha": "ae972e9511a9cc790cfb5aa495ea822806e51413"
+        },
+        {
+          "path": "references/pubmed_search.md",
+          "bytes": 19233,
+          "git_blob_sha": "0927bbb262be116ba76e711af67acd3289791a10"
+        },
+        {
+          "path": "references/script_reference.md",
+          "bytes": 7536,
+          "git_blob_sha": "ea8df755381fe63d90ddd5da6600c44d98d7ca0b"
+        },
+        {
+          "path": "references/search_strategies.md",
+          "bytes": 2727,
+          "git_blob_sha": "5e1d501e01daace93a9896a48c206301019d8545"
+        },
+        {
+          "path": "scripts/_common.py",
+          "bytes": 10912,
+          "git_blob_sha": "645d6beed8601c63a46f6148f1ad4f035a1cdf5f"
+        },
+        {
+          "path": "scripts/doi_to_bibtex.py",
+          "bytes": 6783,
+          "git_blob_sha": "f6412724860834f68bcc600a342a4a8ab27b9e34"
+        },
+        {
+          "path": "scripts/extract_metadata.py",
+          "bytes": 29650,
+          "git_blob_sha": "d3c3a7e0ab9ad358c9b6ef8aebf04486475a3bec"
+        },
+        {
+          "path": "scripts/format_bibtex.py",
+          "bytes": 11075,
+          "git_blob_sha": "dd05a9f728e52cdcae035cff975454de1d23d5ff"
+        },
+        {
+          "path": "scripts/search_google_scholar.py",
+          "bytes": 8746,
+          "git_blob_sha": "ddec828873708b3fac52cad160319848e76b461e"
+        },
+        {
+          "path": "scripts/search_openalex.py",
+          "bytes": 12055,
+          "git_blob_sha": "e66a6bddeec8309da379f4e71da218ad364be721"
+        },
+        {
+          "path": "scripts/search_pubmed.py",
+          "bytes": 14912,
+          "git_blob_sha": "9d9967a3650ff3ff426cbc259e8cf8eec8bb9c40"
+        },
+        {
+          "path": "scripts/validate_citations.py",
+          "bytes": 28361,
+          "git_blob_sha": "0513c351ba734443a0fbd9ee57e97100592a2503"
+        }
+      ]
+    },
+    {
+      "name": "statistical-analysis",
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "revision": "a25cf9ec00e2745d03f8704acf6f6919694ccd9a",
+      "path": "skills/statistical-analysis",
+      "files": 7,
+      "bytes": 120509,
+      "git_tree_files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 23585,
+          "git_blob_sha": "4ea7453a12e63f0dbc31d7a47ed41fe3ff4c4c1a"
+        },
+        {
+          "path": "references/assumptions_and_diagnostics.md",
+          "bytes": 14654,
+          "git_blob_sha": "08fa85f9709297dcad84bfbb138b94df7692685c"
+        },
+        {
+          "path": "references/bayesian_statistics.md",
+          "bytes": 14557,
+          "git_blob_sha": "e78e65e190fd3a68034f0e1b1706383eb0888022"
+        },
+        {
+          "path": "references/effect_sizes_and_power.md",
+          "bytes": 20907,
+          "git_blob_sha": "44d0c74e9d9d416485b2d7a8f56010494d907bcc"
+        },
+        {
+          "path": "references/reporting_standards.md",
+          "bytes": 21469,
+          "git_blob_sha": "38e0ccd4b1d835504f70a1cea3a6526667fe890a"
+        },
+        {
+          "path": "references/test_selection_guide.md",
+          "bytes": 6950,
+          "git_blob_sha": "c518d9e57aee5f8713d153cdc6fe154a9293a9e7"
+        },
+        {
+          "path": "scripts/assumption_checks.py",
+          "bytes": 18387,
+          "git_blob_sha": "a55993050ec75027fc7e9b465b4c0b718548b198"
+        }
+      ]
+    },
+    {
+      "name": "scientific-visualization",
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "revision": "a25cf9ec00e2745d03f8704acf6f6919694ccd9a",
+      "path": "skills/scientific-visualization",
+      "files": 18,
+      "bytes": 204161,
+      "git_tree_files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 15478,
+          "git_blob_sha": "44ea38c24fb5015535254bfd9b5ae9a856195408"
+        },
+        {
+          "path": "assets/color_palettes.py",
+          "bytes": 6756,
+          "git_blob_sha": "2a23b6854c4f1ec3c4a3c2f19c749cb4009d2a7d"
+        },
+        {
+          "path": "assets/nature.mplstyle",
+          "bytes": 1624,
+          "git_blob_sha": "7b3ff8795e4b4e0704bcb99c6cad0efd5290c047"
+        },
+        {
+          "path": "assets/presentation.mplstyle",
+          "bytes": 1465,
+          "git_blob_sha": "ea20c3151e2f339728d9a0a3f926953f993cda18"
+        },
+        {
+          "path": "assets/publication.mplstyle",
+          "bytes": 1822,
+          "git_blob_sha": "d59fbf564e377a6021af28c284b463f72cad7237"
+        },
+        {
+          "path": "assets/publisher_profiles.json",
+          "bytes": 10870,
+          "git_blob_sha": "dd4ac2c025c805bcf4ab5e610a23f64dfbf162c8"
+        },
+        {
+          "path": "references/color_palettes.md",
+          "bytes": 9094,
+          "git_blob_sha": "e76e90618da3957695b0e0e7737619660e5ce23e"
+        },
+        {
+          "path": "references/journal_requirements.md",
+          "bytes": 11200,
+          "git_blob_sha": "a178c097fdfd91fa01a49ea525286bd096435f06"
+        },
+        {
+          "path": "references/matplotlib_examples.md",
+          "bytes": 12165,
+          "git_blob_sha": "aa21fb278521a2fdca653ef8e6afeb94a9b23504"
+        },
+        {
+          "path": "references/publication_guidelines.md",
+          "bytes": 12853,
+          "git_blob_sha": "06c0f1806b583f8d9026419576f881c80875d896"
+        },
+        {
+          "path": "references/sources.md",
+          "bytes": 10697,
+          "git_blob_sha": "0bc86e21968124b52f88863f68a647357d582db1"
+        },
+        {
+          "path": "scripts/_common.py",
+          "bytes": 4618,
+          "git_blob_sha": "62202d7a8f12154ce9d57c0fee51d0961eb98628"
+        },
+        {
+          "path": "scripts/export_plan.py",
+          "bytes": 19682,
+          "git_blob_sha": "19a1e5617afeef04165b15c91e4680a55f11c544"
+        },
+        {
+          "path": "scripts/figure_export.py",
+          "bytes": 23652,
+          "git_blob_sha": "4923ecfc4736c477449fa377a3b1ccbb93e50132"
+        },
+        {
+          "path": "scripts/image_metadata.py",
+          "bytes": 26596,
+          "git_blob_sha": "1e818a12beb2dfccd1b39c602baa27ee7a6cf694"
+        },
+        {
+          "path": "scripts/palette_audit.py",
+          "bytes": 11654,
+          "git_blob_sha": "e12e158db2098b3e3c7c976bf6889de81069bf52"
+        },
+        {
+          "path": "scripts/style_presets.py",
+          "bytes": 16173,
+          "git_blob_sha": "2c9aec0dbb599e8773fdd11e8261064ae455ea0a"
+        },
+        {
+          "path": "scripts/style_preview.py",
+          "bytes": 7762,
+          "git_blob_sha": "686d6684398dc68c0ac48a7e21358cea55fd00a6"
+        }
+      ]
+    },
+    {
+      "name": "peer-review",
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "revision": "a25cf9ec00e2745d03f8704acf6f6919694ccd9a",
+      "path": "skills/peer-review",
+      "files": 24,
+      "bytes": 200981,
+      "git_tree_files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 13853,
+          "git_blob_sha": "d4f3c3e3b5c19fec2518d569ded7e37ac96a964b"
+        },
+        {
+          "path": "assets/citation_references_template.csv",
+          "bytes": 196,
+          "git_blob_sha": "ccefdaa806184717cd79e2dd06888bda58984253"
+        },
+        {
+          "path": "assets/claim_evidence_matrix_template.csv",
+          "bytes": 745,
+          "git_blob_sha": "df23fb265562c2ffe5fce0d817fc603aaeee4c7b"
+        },
+        {
+          "path": "assets/reporting_checklist_template.csv",
+          "bytes": 968,
+          "git_blob_sha": "76505756718804dc5fdef6d70c4fae39752e4069"
+        },
+        {
+          "path": "assets/reporting_guidelines.json",
+          "bytes": 14452,
+          "git_blob_sha": "a39eee022eb45bb24e5bd5e85af0f1b2028761c3"
+        },
+        {
+          "path": "assets/review_intake_template.json",
+          "bytes": 1290,
+          "git_blob_sha": "a10888476849895bc335677ad987e14738b20cfe"
+        },
+        {
+          "path": "assets/review_scaffold_template.md",
+          "bytes": 3025,
+          "git_blob_sha": "dfbae11925ae96be6d6106987435f9774a43eba2"
+        },
+        {
+          "path": "assets/source_ledger.csv",
+          "bytes": 13407,
+          "git_blob_sha": "ad4efb487d9bec5ab3bffd6fc419b18299b0887d"
+        },
+        {
+          "path": "assets/statistical_reproducibility_template.json",
+          "bytes": 7281,
+          "git_blob_sha": "943a30fef1fefad979e9828573d6d76771001399"
+        },
+        {
+          "path": "assets/study_profile_template.json",
+          "bytes": 197,
+          "git_blob_sha": "cce8e5f4e0a67795862ea17e4f30c80c8a44c82c"
+        },
+        {
+          "path": "references/common_issues.md",
+          "bytes": 13999,
+          "git_blob_sha": "f04f8b849f179b2f69e3f247526d0ba8cfc5bfb2"
+        },
+        {
+          "path": "references/ethical_review_practice.md",
+          "bytes": 12209,
+          "git_blob_sha": "aa8db828eaf6d5aec9583f2e4ed1eeb95e158d3d"
+        },
+        {
+          "path": "references/reporting_standards.md",
+          "bytes": 15438,
+          "git_blob_sha": "ba66e8f7ba47c1b78f1c42497393e3e50f0f6d05"
+        },
+        {
+          "path": "references/security_validation.md",
+          "bytes": 4166,
+          "git_blob_sha": "8816f161e18beaafdf259d9bd0c11a2098611879"
+        },
+        {
+          "path": "references/statistical_reproducibility.md",
+          "bytes": 11755,
+          "git_blob_sha": "e274a061d7d6e151ac7254bb3abf37de0bd94ba9"
+        },
+        {
+          "path": "references/tool_reference.md",
+          "bytes": 9670,
+          "git_blob_sha": "fbd0d689d60c3097f89903957522ca8a84b3dad8"
+        },
+        {
+          "path": "scripts/_common.py",
+          "bytes": 13896,
+          "git_blob_sha": "3f8aa2152ea785ea34933c4c6555e0e4ec85fee0"
+        },
+        {
+          "path": "scripts/audit_citations.py",
+          "bytes": 7097,
+          "git_blob_sha": "1a7d3ec1ed8eccd075793f16d9f7c35504b2751e"
+        },
+        {
+          "path": "scripts/audit_statistics_reproducibility.py",
+          "bytes": 10455,
+          "git_blob_sha": "931d2145d64d1ffd1393c78492076ea23281240c"
+        },
+        {
+          "path": "scripts/generate_review_scaffold.py",
+          "bytes": 2634,
+          "git_blob_sha": "0951a39062a3cbc92bf43bb21d8ccaae74ab81c4"
+        },
+        {
+          "path": "scripts/lint_review.py",
+          "bytes": 9085,
+          "git_blob_sha": "ff2fe89818097e88eec15316f7808ef1056b4607"
+        },
+        {
+          "path": "scripts/select_reporting_guidelines.py",
+          "bytes": 13594,
+          "git_blob_sha": "af1e99d369e60de14cd35c7c4a652272888f6ccd"
+        },
+        {
+          "path": "scripts/validate_claim_evidence.py",
+          "bytes": 7083,
+          "git_blob_sha": "f506aaf5074f278eed5257db3ac5f3649258de16"
+        },
+        {
+          "path": "scripts/validate_review_intake.py",
+          "bytes": 14486,
+          "git_blob_sha": "ee25712a43b3f58503f4d680182cf46d039c34ae"
+        }
+      ]
+    },
+    {
+      "name": "sympy",
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "revision": "a25cf9ec00e2745d03f8704acf6f6919694ccd9a",
+      "path": "skills/sympy",
+      "files": 8,
+      "bytes": 89107,
+      "git_tree_files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 13293,
+          "git_blob_sha": "6eb0e837c3cf88c0b1a8107cfba3cbd18557d9e6"
+        },
+        {
+          "path": "references/advanced-topics.md",
+          "bytes": 14192,
+          "git_blob_sha": "540bfbff659edaac68ee73300e41ddc3fbfe9828"
+        },
+        {
+          "path": "references/code-generation-printing.md",
+          "bytes": 15244,
+          "git_blob_sha": "1a862c7e03ab8c975596a950197697132f7d7942"
+        },
+        {
+          "path": "references/core-capabilities.md",
+          "bytes": 9601,
+          "git_blob_sha": "feaf7520eed41fd4a72c1cd4d1437bdd388864bf"
+        },
+        {
+          "path": "references/core_capabilities.md",
+          "bytes": 5239,
+          "git_blob_sha": "b50094c2d4f4c70d1a72fa0096a231d94cc06e89"
+        },
+        {
+          "path": "references/matrices-linear-algebra.md",
+          "bytes": 10493,
+          "git_blob_sha": "2a8f6430c262591850b32dcc3ac959131862e210"
+        },
+        {
+          "path": "references/physics-mechanics.md",
+          "bytes": 15004,
+          "git_blob_sha": "3826e0d1918aae6955c2e443657cf4a620545dfa"
+        },
+        {
+          "path": "references/review.md",
+          "bytes": 6041,
+          "git_blob_sha": "f8c5028a14734d56ab86d31d36b58bcc0b2df88c"
+        }
+      ]
+    },
+    {
+      "name": "experimental-design",
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "revision": "a25cf9ec00e2745d03f8704acf6f6919694ccd9a",
+      "path": "skills/experimental-design",
+      "files": 7,
+      "bytes": 66897,
+      "git_tree_files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 16328,
+          "git_blob_sha": "ee14f9ed795c791ac80e3ea946858d97d09c3e50"
+        },
+        {
+          "path": "references/design_types.md",
+          "bytes": 7972,
+          "git_blob_sha": "f4ff1908a6c0d967375abb5447e5c8e62ec7d628"
+        },
+        {
+          "path": "references/factorial_and_doe.md",
+          "bytes": 9069,
+          "git_blob_sha": "9e7558fcbfa301e1507b9779cc57e33749e2252b"
+        },
+        {
+          "path": "references/randomization_and_blocking.md",
+          "bytes": 7831,
+          "git_blob_sha": "1b0dd39fee22c4fd0347cd30e6163d8c9d1fa731"
+        },
+        {
+          "path": "references/sequential_and_adaptive.md",
+          "bytes": 6530,
+          "git_blob_sha": "ee93386737a996b34519932b62fd07a89b01682a"
+        },
+        {
+          "path": "scripts/doe_designs.py",
+          "bytes": 9575,
+          "git_blob_sha": "4b8033c43cc5c885d7102a896f21dd0ae5ed808e"
+        },
+        {
+          "path": "scripts/randomization.py",
+          "bytes": 9592,
+          "git_blob_sha": "b4ef4355289ef556fcde40a703eb383597564b78"
+        }
+      ]
+    },
+    {
+      "name": "uncertainty-and-units",
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "revision": "a25cf9ec00e2745d03f8704acf6f6919694ccd9a",
+      "path": "skills/uncertainty-and-units",
+      "files": 15,
+      "bytes": 234572,
+      "git_tree_files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 21731,
+          "git_blob_sha": "28bcc333961e29f41681a7b7afdd01f402d54646"
+        },
+        {
+          "path": "references/domain-conversions.md",
+          "bytes": 10142,
+          "git_blob_sha": "1d3919849003ffda63a2f71b64e6a36f3b82811d"
+        },
+        {
+          "path": "references/gum-methodology.md",
+          "bytes": 11916,
+          "git_blob_sha": "2a6370ccc714cb9dd70976c81b2e2c46661a9721"
+        },
+        {
+          "path": "references/pint-recipes.md",
+          "bytes": 9129,
+          "git_blob_sha": "5f41969393d7c3e31f68ce5f42fd0d8d8497fddd"
+        },
+        {
+          "path": "references/plausibility-scales.md",
+          "bytes": 11834,
+          "git_blob_sha": "5ff02e59bdad42bd4e5910d05f28c6f1650b354b"
+        },
+        {
+          "path": "references/reporting-rules.md",
+          "bytes": 7152,
+          "git_blob_sha": "07c7c41eb0d9cc5eac59a7f736ca4e4fceb5d077"
+        },
+        {
+          "path": "references/review.md",
+          "bytes": 6939,
+          "git_blob_sha": "a57ed46f26a5ef7a8d6130fea191aaf339c73b18"
+        },
+        {
+          "path": "references/uncertainties-recipes.md",
+          "bytes": 8098,
+          "git_blob_sha": "2a76d889e48bf4fac00501381b01330fd7756432"
+        },
+        {
+          "path": "scripts/_common.py",
+          "bytes": 23029,
+          "git_blob_sha": "745d7050f3f3ce82c0c95fc55720673ecddc23d9"
+        },
+        {
+          "path": "scripts/audit_units.py",
+          "bytes": 21229,
+          "git_blob_sha": "11a6fa2c688df0071bb452a000b03701a4d99aeb"
+        },
+        {
+          "path": "scripts/check_plausibility.py",
+          "bytes": 36733,
+          "git_blob_sha": "099a94e60e82cc23a58fc602e062bbdaea0aa7b5"
+        },
+        {
+          "path": "scripts/convert_units.py",
+          "bytes": 11963,
+          "git_blob_sha": "52643e9fc256c28a3b7cb849594fbbc89579190a"
+        },
+        {
+          "path": "scripts/format_result.py",
+          "bytes": 12001,
+          "git_blob_sha": "6c4057017bad85eb33d8b61d172019ce947970fd"
+        },
+        {
+          "path": "scripts/propagate_uncertainty.py",
+          "bytes": 28632,
+          "git_blob_sha": "0c31b26b7e753b98e3cbd33600bff8d188c34b16"
+        },
+        {
+          "path": "scripts/uncertainty_budget.py",
+          "bytes": 14044,
+          "git_blob_sha": "175e9e81240b8848d5b9ab17096aa54e5f55744d"
+        }
+      ]
+    },
+    {
+      "name": "pdf",
+      "repository": "openai/skills",
+      "revision": "49f948faa9258a0c61caceaf225e179651397431",
+      "path": "skills/.curated/pdf",
+      "files": 4,
+      "bytes": 14824,
+      "git_tree_files": [
+        {
+          "path": "LICENSE.txt",
+          "bytes": 10776,
+          "git_blob_sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 2517,
+          "git_blob_sha": "fd5d56058f10202e4f50a30bc2906f39696024a1"
+        },
+        {
+          "path": "agents/openai.yaml",
+          "bytes": 219,
+          "git_blob_sha": "fe2876a68ad5cdbf6d045396e18fba9b8919e1bf"
+        },
+        {
+          "path": "assets/pdf.png",
+          "bytes": 1312,
+          "git_blob_sha": "dd16ba283f6056cfe99cc3d36612d3b8cd79e00d"
+        }
+      ]
+    },
+    {
+      "name": "jupyter-notebook",
+      "repository": "openai/skills",
+      "revision": "49f948faa9258a0c61caceaf225e179651397431",
+      "path": "skills/.curated/jupyter-notebook",
+      "files": 12,
+      "bytes": 30864,
+      "git_tree_files": [
+        {
+          "path": "LICENSE.txt",
+          "bytes": 10776,
+          "git_blob_sha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 4154,
+          "git_blob_sha": "e1d1748cac9e9313c8229763751714628d1f6853"
+        },
+        {
+          "path": "agents/openai.yaml",
+          "bytes": 325,
+          "git_blob_sha": "8832dea0a6e64f173f09e77f690dada6a5f73074"
+        },
+        {
+          "path": "assets/experiment-template.ipynb",
+          "bytes": 2570,
+          "git_blob_sha": "a4a0323e567a772456395aee29494b1babee622c"
+        },
+        {
+          "path": "assets/jupyter-small.svg",
+          "bytes": 1043,
+          "git_blob_sha": "472d07fdfca9a558325cc8eaf91e861a44843b3e"
+        },
+        {
+          "path": "assets/jupyter.png",
+          "bytes": 2713,
+          "git_blob_sha": "51cdf7d3bba730eda85a26a87d1ee65c14da97f0"
+        },
+        {
+          "path": "assets/tutorial-template.ipynb",
+          "bytes": 2490,
+          "git_blob_sha": "7001309593a8c10fa34d68870c3a558348f76216"
+        },
+        {
+          "path": "references/experiment-patterns.md",
+          "bytes": 699,
+          "git_blob_sha": "2d5093b256f328dabb89de16822286c5f2f4dda4"
+        },
+        {
+          "path": "references/notebook-structure.md",
+          "bytes": 751,
+          "git_blob_sha": "681d36f53d55cb089b1d815bacaac9b363f76fa4"
+        },
+        {
+          "path": "references/quality-checklist.md",
+          "bytes": 572,
+          "git_blob_sha": "5482f282845271ac1614a33135000e18f54d95aa"
+        },
+        {
+          "path": "references/tutorial-patterns.md",
+          "bytes": 685,
+          "git_blob_sha": "2a360b089b904299f463f88b5cdae0ea9bdb1123"
+        },
+        {
+          "path": "scripts/new_notebook.py",
+          "bytes": 4086,
+          "git_blob_sha": "0aba209a63c9744e7eeca5a59a12135b387e5229"
+        }
+      ]
+    }
+  ]
+}

@@ -4,4 +4,25 @@ root: datasets/tum_rgbd/rgbd_dataset_freiburg1_xyz
 rgb_index: rgb.txt
 depth_index: depth.txt
 groundtruth_index: groundtruth.txt
-# Intrinsics must match the selected sequence; do not assume default pinhole calibration.
+max_depth_difference_s: 0.02
+max_pose_difference_s: 0.02
+camera:
+  width: 640
+  height: 480
+  fx: 517.306408
+  fy: 516.469215
+  cx: 318.643040
+  cy: 255.313989
+  distortion: [0.262383, -0.953104, -0.005358, 0.002628, 1.163314]
+  distortion_model: opencv_radial_tangential
+  calibration_source: https://github.com/UZ-SLAMLab/ORB_SLAM3/blob/4452a3c4ab75b1cde34e5505a36ec3f9edcdc4c4/Examples/Monocular/TUM1.yaml
+  depth_units_per_metre: 5000.0
+  depth_registered_to_rgb: true
+  undistort: false
+download:
+  url: https://cvg.cit.tum.de/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_xyz.tgz
+  size_bytes: 448204271
+  sha256: a0236d97b8c30cd93b653656d2b6c293ff7c982a4130ef2a1a8beecdb124ef98
+  checksum_provenance: observed_first_download_2026-11-04_not_publisher_checksum
+  archive: datasets/archives/rgbd_dataset_freiburg1_xyz.tgz
+  extract_to: datasets/tum_rgbd
