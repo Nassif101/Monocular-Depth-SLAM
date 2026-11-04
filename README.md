@@ -1,97 +1,51 @@
-# Dynamic Motion Planning for Transporting Bulky Objects in Constrained Construction Environments
+# Monocular Depth SLAM
 
-This repository contains the software, simulation assets, configuration files, and supporting tools developed for a master's thesis on dynamic motion planning for mobile robots transporting bulky objects in constrained construction environments.
+Research repository for benchmarking **ORB-SLAM3 + Depth Anything 3 (DA3)** against monocular ORB-SLAM3, then investigating depth calibration, uncertainty-aware fusion, and scale observability.
 
-The project focuses on robot-based object transport tasks such as moving wall panels, beams, or other prefabricated construction components through narrow, obstacle-rich environments while considering static and dynamic obstacles.
+**Status:** repository scaffold. No baseline has been run or validated.
 
-## Thesis Context
+## First experiment
 
-Mobile robots used in construction must often transport objects that are large relative to the available free space. This creates motion-planning challenges when the robot must move through constrained passages such as corridors, scaffolding, temporary site layouts, or partially built structures.
+1. Run ORB-SLAM3 monocular on TUM RGB-D RGB frames.
+2. Cache DA3 depth predictions with timestamps, intrinsics, model revision, depth convention, and units.
+3. Check prediction-to-ground-truth alignment and bias. Oracle depth calibration must be labelled as such.
+4. Explore ORB-SLAM3's RGB-D path with converted DA3 predictions, documenting any changes and limitations.
+5. Compare SE(3) ATE, Sim(3) ATE, RPE, scale drift, tracking failures, and runtime.
 
-The thesis investigates dynamic motion-planning methods that support safe and feasible transport of bulky objects using onboard sensing and robot motion planning.
+**Caution:** DA3 predictions are not automatically metric or compatible with ORB-SLAM3 RGB-D depth. Validate model output and scale before use.
 
-## Objectives
+## Structure
 
-The repository supports the following thesis objectives:
+- `configs/`: camera, dataset, SLAM and depth settings
+- `datasets/`: local dataset files (gitignored)
+- `predictions/`: generated depth maps (gitignored)
+- `evaluations/`: evaluation protocols and scripts
+- `experiments/`: baseline and ablation manifests
+- `docs/`: setup, architecture, methodology, research log
+- `scripts/`: CLI entrypoints and dataset utilities
+- `src/monocular_depth_slam/`: adapters and future fusion code
+- `tests/`: reproducible checks
+- `third_party/`: external code (not vendored)
+- `results/`: run artifacts (gitignored)
 
-1. Review existing motion-planning approaches for robots transporting bulky objects in construction environments.
-2. Design a methodology for dynamic motion planning in constrained construction scenarios.
-3. Implement a motion-planning framework based on the developed methodology.
-4. Validate the framework through simulated transport experiments.
-5. Analyze the results and evaluate the performance, strengths, and limitations of the implemented framework.
+## Quick start
 
-## Scope
-
-The project is intended to support research and experimentation related to:
-
-- mobile robot navigation in constrained construction-like environments
-- transport of bulky or extended objects
-- static and dynamic obstacle avoidance
-- onboard sensing for environment perception
-- simulation-based validation
-- integration of navigation, manipulation, and motion-planning components
-
-## Repository Structure
-
-## Development Environment
-
-The project targets the following software environment:
-
-- Ubuntu 24.04
-- ROS 2 Jazzy
-- Gazebo Harmonic
-- MoveIt 2
-- Nav2
-- RViz2
-
-## Getting Started
-
-### Open in Dev Container
-
-```text
-Dev Containers: Reopen in Container
-```
-
-### Build the Workspace
-
-Inside the development environment:
+Open in VS Code with the Dev Containers extension and choose **Reopen in Container**. The lightweight container includes Python and C++ build tools, not ORB-SLAM3 or DA3 itself.
 
 ```bash
-source /opt/ros/jazzy/setup.bash
-colcon build --symlink-install
-source install/setup.bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e '.[dev]'
+pytest
+python scripts/check_environment.py
 ```
 
-### Clean Build
+See [docs/setup.md](docs/setup.md) for external dependency and GPU instructions. The baseline runner is not yet implemented.
 
-```bash
-rm -rf build install log
-colcon build --symlink-install
-source install/setup.bash
-```
+## Research discipline
 
-## Running the System
-
-## Documentation
-
-Documentation is developed alongside the implementation. Relevant documentation may include:
-
-- system architecture
-- package descriptions
-- simulation setup
-- experiment setup
-- parameter documentation
-- evaluation procedure
-- known limitations
-
-Documentation files should be placed in the `docs/` directory where appropriate.
-
-## Development Notes
+Keep model and dependency revisions pinned in run metadata; never evaluate metric scale only after Sim(3) alignment. Do not commit datasets, checkpoint weights, or generated outputs.
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-
-## Acknowledgement
-
-This repository is developed as part of a master's thesis in the field of robotics, motion planning, and construction automation.
+MIT. See [LICENSE](LICENSE). Third-party components have independent licenses.

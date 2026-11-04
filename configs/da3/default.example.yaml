@@ -1,0 +1,5 @@
+model: depth_anything_3
+checkpoint: null  # required before inference
+revision: null    # pin upstream revision
+output_convention: null  # e.g. z_depth, range, inverse_depth
+metric_scale_validated: false

@@ -1,0 +1,4 @@
+mode: monocular
+revision: null  # pin upstream commit
+vocabulary: third_party/ORB_SLAM3/Vocabulary/ORBvoc.txt
+camera_settings: null  # provide sequence-specific ORB-SLAM3 YAML

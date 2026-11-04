@@ -1,0 +1,7 @@
+dataset: tum_rgbd
+sequence: rgbd_dataset_freiburg1_xyz
+root: datasets/tum_rgbd/rgbd_dataset_freiburg1_xyz
+rgb_index: rgb.txt
+depth_index: depth.txt
+groundtruth_index: groundtruth.txt
+# Intrinsics must match the selected sequence; do not assume default pinhole calibration.
